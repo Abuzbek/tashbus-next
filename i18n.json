@@ -1,0 +1,15 @@
+{
+  "locales": [
+    "uz",
+    "uzb",
+    "ru",
+    "en"
+  ],
+  "defaultLocale": "uz",
+  "localeDetection": false,
+  "pages": {
+    "*": [
+      "common"
+    ]
+  }
+}

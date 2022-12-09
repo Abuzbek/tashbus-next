@@ -1,0 +1,12 @@
+.navbar {
+  @apply flex items-end justify-between pt-2;
+  &_logo {
+    @apply mr-6;
+  }
+  &_utils {
+    @apply flex items-center gap-6;
+  }
+  &_search_btn {
+    @apply hover:text-gray-600;
+  }
+}

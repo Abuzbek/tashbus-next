@@ -1,0 +1,24 @@
+.search_dialog {
+  @apply fixed z-[9999] w-full h-full top-0 left-0 bg-white flex items-center justify-center;
+  &_header {
+    @apply flex justify-end items-center fixed top-0 left-0 right-0 h-12 p-1;
+  }
+  &_close_btn {
+    @apply w-10 h-10 bg-[#0065C1] rounded-md text-white flex items-center justify-center;
+  }
+  .search_container {
+    @apply max-w-xl w-full mx-auto px-4;
+  }
+  .search_wrapper {
+    @apply flex items-center gap-7 w-full;
+  }
+  .search_input {
+    @apply flex items-center w-full;
+    input {
+      @apply bg-gray-100 rounded-l-md w-full h-10 px-4 focus:outline-none border-l-2 border-b-2 border-t-2 border-transparent focus:border-[#0065C1];
+    }
+    button {
+      @apply text-white bg-[#0065C1] rounded-r-md h-10 px-4 flex items-center;
+    }
+  }
+}
