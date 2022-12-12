@@ -1,11 +1,16 @@
-import { useRouter } from "next/router";
 import React, { FC } from "react";
-import $api from "../../../app/api/axios";
 import Layout from "../../layout/Layout";
 import { IHome } from "../../../app/models/pages/home.interface";
+import DiscoverSlider from "./DiscoverSlider";
 
-const HomePage: FC<IHome> = ({ menus }) => {
-  return <Layout title="Asosiy" menus={menus}></Layout>;
+const HomePage: FC<IHome> = ({ menus, images }) => {
+  return (
+    <Layout title="Asosiy" menus={menus}>
+      <div className="container">
+        <DiscoverSlider images={images} />
+      </div>
+    </Layout>
+  );
 };
 
 export default HomePage;

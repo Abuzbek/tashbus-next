@@ -4,6 +4,14 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   ...nextTranslate({}),
+  images: {
+    remotePatterns: [
+      {
+        hostname: "127.0.0.1",
+        port: "8000",
+      },
+    ],
+  },
   // async rewrites() {
   //   return [
   //     {

@@ -9,7 +9,6 @@ const LocaleSwitcher: FC = () => {
   const { t } = useTranslation("common");
   const router = useRouter();
   const { locales, locale: activeLocale } = router;
-
   return (
     <>
       <Menu as="div" className="relative inline-block text-left">
@@ -41,7 +40,7 @@ const LocaleSwitcher: FC = () => {
           leaveFrom="transform opacity-100 scale-100"
           leaveTo="transform opacity-0 scale-95"
         >
-          <Menu.Items className="absolute left-0 mt-2 origin-top-left bg-[#f3f3f3] rounded-md overflow-hidden shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+          <Menu.Items className="absolute left-0 mt-2 origin-top-left bg-[#f3f3f3] rounded-md overflow-hidden shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none z-50">
             {locales?.map((locale, index) => {
               const { pathname, query, asPath } = router;
               if (activeLocale !== locale) {

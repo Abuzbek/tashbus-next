@@ -1,5 +1,5 @@
 .nav_list {
-  @apply flex gap-6 items-center flex-grow;
+  @apply flex gap-6 items-center flex-grow pb-1.5;
   .menu {
     @apply relative;
     &_button {

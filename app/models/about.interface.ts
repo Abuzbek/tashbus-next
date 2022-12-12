@@ -8,7 +8,7 @@ export interface IAbout {
 }
 
 export interface IAboutImages {
-  photo: ICover | null;
+  photo: ICover;
 }
 
 export interface IAboutFooter {

@@ -1,6 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Montserrat:wght@300;400;500;600;700;800&family=Mulish:wght@200;300;400;500;600;700;800;900&display=swap");
 
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.button-more {
+  @apply py-4 px-12 text-white font-mulish font-medium text-lg leading-6 bg-[#0065C1] hover:bg-[#007CEE] rounded-full transition duration-300;
+}
